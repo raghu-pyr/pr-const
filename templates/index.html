@@ -1,0 +1,118 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+
+<section id="showcase" class="py-5">
+  <div class="container py-5">
+    <div class="row py-5">
+      <div class="col-md-9" id="column1" data-aos="fade-right">
+        <div class="display-3 text-white">
+          With Over 35 Years of Experience
+        </div>
+        <div class="text-white h1">
+          in the field of construction. We have built structures that were your
+          Homes, Schools, Colleges, etc
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="service" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card p-4" data-aos="fade-up" id="card1">
+          <p class="h3">
+            Expertise
+          </p>
+          <hr />
+          <p>
+            Established in 1985, we have over 3 decades of experience in
+            erecting long lasting structures
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-4" data-aos="fade-down" id="card2">
+          <p class="h3">
+            Quality
+          </p>
+          <hr />
+          <p>
+            Quality is the heart of our work ethics. We ensure quality in
+            everything that we do
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-4" data-aos="fade-up" id="card3">
+          <p class="h3">
+            On Time
+          </p>
+          <hr />
+          <p>
+            We value business commitments like none other. We always strive to
+            deliver ontime
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-4" data-aos="fade-down" id="card4">
+          <p class="h3">
+            Accuracy
+          </p>
+          <hr />
+          <p>
+            We bring out the plan on paper to reality with precision and
+            accurate planning
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="choose" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mt-15"  data-aos="fade-right">
+        <img
+          src="{% static 'img/building-1.jpg' %}"
+          alt=""
+          class="rounded-circle img-fluid"
+        />
+      </div>
+      <div class="col-md-6"  data-aos="fade-left">
+        <h3>Why Choose Us?</h3>
+        <p>
+          We started our business over 35 year ago. We have invaluable
+          experience and expertise though the years
+        </p>
+        <div class="d-flex">
+          <div class="align-self-start p-4">
+            <i class="fas fa-check fa-2x"></i>
+          </div>
+          <div class="align-self-start p-4">
+            <p>
+              We specalize in Centering and Bardening works. Translating your
+              ideas and plans from paper to reality
+            </p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="align-self-start p-4">
+            <i class="fas fa-check fa-2x"></i>
+          </div>
+          <div class="align-self-start p-4">
+            <p>
+              We have worked with innumerable number of clients and partners.
+              Building we erected speaks for themselves. Take a look at our
+              <span><a href="{% url 'basicapp:work' %}">projects</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

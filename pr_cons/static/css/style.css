@@ -1,0 +1,170 @@
+* {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+:root {
+  --prim-color: navy;
+  --sec-color: #018059;
+  --neutral-color: white;
+}
+
+.navbar {
+  background-color: var(--prim-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--neutral-color) !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+.nav-link:hover {
+  background-color: var(--sec-color);
+  color: var(--neutral-color) !important;
+  justify-content: center;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  background-color: var(--prim-color);
+}
+
+.dropdown-item {
+  color: var(--neutral-color) !important;
+}
+
+.dropdown-item:hover {
+  background-color: var(--sec-color) !important;
+}
+
+#showcase {
+  background-image: url(../img/rmk-const-collage-4.jpg);
+  background-position: no-repeat;
+  background-size: cover;
+}
+
+#showcase #column1 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#service #card1 {
+  background-color: var(--prim-color);
+  color: var(--neutral-color);
+  justify-content: center;
+  align-items: center;
+}
+
+#service #card2 {
+  background-color: var(--sec-color);
+  color: var(--neutral-color);
+  justify-content: center;
+  align-items: center;
+}
+
+#service #card3 {
+  background-color: var(--prim-color);
+  color: var(--neutral-color);
+  justify-content: center;
+  align-items: center;
+}
+
+#service #card4 {
+  background-color: var(--sec-color);
+  color: var(--neutral-color);
+  justify-content: center;
+  align-items: center;
+}
+
+#service #card1:hover {
+  background-color: var(--neutral-color);
+  color: var(--prim-color);
+  justify-content: center;
+  align-items: center;
+}
+
+#service #card2:hover {
+  background-color: var(--neutral-color);
+  color: var(--sec-color);
+  justify-content: center;
+  align-items: center;
+}
+
+#service #card3:hover {
+  background-color: var(--neutral-color);
+  color: var(--prim-color);
+  justify-content: center;
+  align-items: center;
+}
+
+#service #card4:hover {
+  background-color: var(--neutral-color);
+  color: var(--sec-color);
+  justify-content: center;
+  align-items: center;
+}
+
+#choose img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#about .container {
+  background-color: rgb(1, 128, 89, 0.4);
+}
+
+#about-text {
+  text-align: newspaper;
+  align-items: center;
+  justify-content: center;
+}
+
+#serviceButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fas,
+.far {
+  color: var(--prim-color);
+}
+
+.fas:hover,
+.far:hover {
+  color: var(--sec-color);
+}
+
+#contact .container {
+  background-color: rgb(1, 128, 89, 0.4);
+}
+
+.serv {
+  justify-content: center;
+  align-items: center;
+}
+
+#servText h2 {
+  background-color: rgb(1, 128, 89, 0.4);
+}
+
+#servText img {
+  width: 100%;
+}
+
+#gallery img {
+  width: 1000px;
+  height: 100%;
+}
+
+footer {
+  background-color: var(--prim-color);
+}

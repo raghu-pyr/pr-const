@@ -1,0 +1,54 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+
+<section id="services" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col" id="serviceButton">
+        <a href="#" class="p-3" onclick='openTab("roofing")'
+          ><i class="fas fa-store-alt fa-5x" id="roofing-icon"></i
+        ></a>
+        <a href="#" class="p-3" onclick='openTab("centring")'
+          ><i class="far fa-building fa-5x" id="centring-icon"></i
+        ></a>
+        <a href="#" class="p-3" onclick='openTab("rodworks")'
+          ><i class="fas fa-industry fa-5x" id="rodworks-icon"></i
+        ></a>
+      </div>
+    </div>
+    <hr />
+
+    <div class="row" id="servText">
+      <div class="col">
+        <div id="roofing" class="serv">
+          <h2 class="display-1 p-2">Roofing</h2>
+          <img src="{% static 'img/concrete-floor.jpg' %}" alt="" />
+          <p class="display-4">
+            Concrete Roofs and Floors are the strongest part of your building.
+            Ensuring proper mix and craftmanship while laying concrete ensure
+            the building is stronger and can withstand all conditions
+          </p>
+        </div>
+        <div id="centring" class="serv" style="display:none">
+          <h2 class="display-1 p-2">Centring</h2>
+          <img src="{% static 'img/pillar.jpg' %}" alt="" />
+          <p class="display-4">
+            Proper Centring involves erecting pillars, sunshades and other
+            structure which forms the skeleton of the building. This skeleton
+            holds the building together against all the natural calamities
+          </p>
+        </div>
+        <div id="rodworks" class="serv" style="display:none">
+          <h2 class="display-1 p-2">Rod Works</h2>
+          <img src="{% static 'img/rod-works.jpg' %}" alt="" />
+          <p class="display-4">
+            Iron rods run through the length and bredth of the building forming
+            the structure. This structure is built upon to create your home and
+            other strong structures
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
